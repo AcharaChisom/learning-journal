@@ -1,0 +1,186 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.nav__links {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+.nav__link {
+    color: #090909;
+}
+.nav__item {
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.home {
+    margin-left: auto;
+    margin-right: 1.7rem;
+}
+.logo-text {
+    margin-left: 0.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #0E0E0E;
+}
+
+.header__main {
+    color: #FFFFFF;
+    min-height: 21rem;
+    background-image: url('./images/hero.png');
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.header__date {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+.header__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.header__text {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+/* .blog {
+    margin: 2rem 0;
+} */
+.blogs {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+.blog__img {
+    width: 100%;
+}
+.blog__date {
+    color: #000000;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding-top: 0.875rem;
+}
+.blog__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #141414;
+    padding-top: 0.875rem;
+}
+.blog__text {
+    font-weight: 400;
+    color: #505050;
+    line-height: 1.5;
+}
+
+.blog__link {
+    color: inherit;
+}
+
+.more {
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.view-more {
+    text-decoration: underline;
+    color: #000000;
+    font-weight: 700;
+}
+
+.footer {
+    font-size: 0.75rem;
+    background: #202020;
+    text-align: center;
+    padding: 2rem 0;
+}
+.footer__text {
+    color: #ECECEC;
+    font-weight: 700;
+}
+.footer__right {
+    color: #D7D7D7;
+    font-weight: 400;
+}
+
+
+/* BLOGS */
+.texts {
+    margin: 2rem 0 3rem;
+    color: #151515;
+    display: grid;
+    grid-gap: 1rem;
+}
+.texts__date {
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+.texts__title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.texts__text {
+    font-weight: 400;
+    line-height: 1.5;
+}
+.texts__title-small {
+    font-weight: 700;
+}
+
+.recent {
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ABOUT */
+.space {
+    margin-top: 2rem;
+}
+.about__img, .about__title {
+    margin-bottom: 1rem;
+}
+
+
+@media (min-width: 500px) {
+    .header__main {
+        background-image: url('./images/hero-big.png');
+        min-height: 70vh;
+    }
+    .home__desktop {
+        display: block;
+        width: 65%;
+    }
+}
+
+@media (min-width: 800px) {
+    .about__flex {
+        display: flex;
+        align-items: center;
+    }
+    .about__flex-inner {
+        margin-left: 2rem;
+    }
+}
