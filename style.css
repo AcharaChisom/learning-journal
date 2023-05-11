@@ -72,7 +72,7 @@ img {
 .blogs {
     margin: 2rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 2rem;
 }
 .blog__img {
